@@ -1,0 +1,14 @@
+# Core Django
+Django==4.2.7
+
+# Image handling for profile pictures and projects
+Pillow==10.0.1
+
+# Environment variables
+python-decouple==3.8
+
+# Static files serving
+whitenoise==6.5.0
+
+# Optional: Better admin interface
+django-import-export==3.3.0
