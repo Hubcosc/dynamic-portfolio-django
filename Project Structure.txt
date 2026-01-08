@@ -1,0 +1,71 @@
+myportfolio/
+├── manage.py
+├── requirements.txt
+├── .env.example
+├── .gitignore
+├── README.md
+├── portfolio_project/           # Project config folder (settings, URLs)
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py                  # Main URL router
+│   ├── wsgi.py
+│   └── asgi.py
+├── core/                        # Main app (your models.py goes here)
+│   ├── __init__.py
+│   ├── admin.py                 # Register all models here
+│   ├── apps.py
+│   ├── models.py                # All your models from earlier
+│   ├── forms.py                 # Contact form, etc.
+│   ├── urls.py                  # App URLs
+│   ├── context_processors.py    # For global data (like site settings)
+│   ├── middleware.py            # Visitor tracking middleware
+│   ├── utils.py                 # Helper functions
+│   ├── signals.py               # Signals for visitor tracking
+│   ├── views/                   # SEPARATED VIEWS (GOOD IDEA!)
+│   │   ├── __init__.py          # Import all views here
+│   │   ├── home_views.py
+│   │   ├── about_views.py
+│   │   ├── resume_views.py
+│   │   ├── skills_views.py
+│   │   ├── projects_views.py
+│   │   ├── contact_views.py
+│   │   ├── analytics_views.py
+│   │   └── api_views.py        # Optional: for AJAX requests
+│   ├── templates/
+│   │   └── core/
+│   │       ├── base.html
+│   │       ├── includes/       # Reusable components
+│   │       │   ├── navbar.html
+│   │       │   ├── footer.html
+│   │       │   ├── visitor_counter.html
+│   │       │   └── project_card.html
+│   │       ├── home.html
+│   │       ├── about.html
+│   │       ├── resume.html
+│   │       ├── skills.html
+│   │       ├── projects.html
+│   │       ├── contact.html
+│   │       └── admin/          # Custom admin templates
+│   │           └── dashboard.html
+│   └── static/
+│       └── core/               # App-specific static files
+│           ├── css/
+│           │   ├── styles.css
+│           │   └── admin.css   # Custom admin styles
+│           ├── js/
+│           │   ├── main.js
+│           │   ├── visitor_tracking.js
+│           │   └── like_button.js
+│           └── images/
+│               └── logo.svg
+├── static/                     # Collected static files (production)
+├── media/                     # User uploaded files
+│   ├── profile/
+│   ├── projects/
+│   └── downloads/
+├── docs/                      # Documentation
+│   ├── models_diagram.md
+│   └── api_endpoints.md
+└── scripts/                   # Utility scripts
+    ├── setup.sh
+    └── backup_db.py
