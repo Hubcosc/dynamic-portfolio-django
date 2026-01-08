@@ -1,0 +1,80 @@
+
+---
+
+## **5. .gitignore Content:**
+
+Create a `.gitignore` file with:
+
+```gitignore
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Media files (user uploaded)
+media/
+
+# Static files (collected)
+staticfiles/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Backup files
+*.bak
+
+# Database
+*.db
+
+# Logs
+logs/
+
+# Temp files
+tmp/
+temp/
+
+# Documentation
+docs/_build/
+
+# Sphinx
+docs/_build/
+
+# Pyre type checker
+.pyre/
